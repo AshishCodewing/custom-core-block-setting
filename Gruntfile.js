@@ -9,7 +9,7 @@ module.exports = function( grunt ) {
 
 		addtextdomain: {
 			options: {
-				textdomain: 'ai-modal-plugin',
+				textdomain: 'custom-core-block-setting',
 			},
 			update_all_domains: {
 				options: {
@@ -32,8 +32,8 @@ module.exports = function( grunt ) {
 				options: {
 					domainPath: '/languages',
 					exclude: [ '\.git/*', 'bin/*', 'node_modules/*', 'tests/*' ],
-					mainFile: 'ai-modal-plugin.php',
-					potFilename: 'ai-modal-plugin.pot',
+					mainFile: 'custom-core-block-setting.php',
+					potFilename: 'custom-core-block-setting.pot',
 					potHeaders: {
 						poedit: true,
 						'x-poedit-keywordslist': true

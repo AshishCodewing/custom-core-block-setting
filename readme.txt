@@ -1,4 +1,4 @@
-=== Ai Modal Plugin ===
+=== Custom Core Block Setting ===
 Contributors: (this should be a list of wordpress.org userid's)
 Donate link: https://example.com/
 Tags: comments, spam
@@ -13,8 +13,6 @@ Here is a short description of the plugin.  This should be no more than 150 char
 
 == Description ==
 This plugin add custom attribute on the core/paragraph block.
-
-
 
 == Credits ==
 The code for adding custom attribute to the core/paragraph block are used from the MarieComet's core-block-custom-attributes git repo

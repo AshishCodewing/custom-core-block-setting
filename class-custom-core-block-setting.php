@@ -1,19 +1,19 @@
 <?php
 
-namespace AIModalPlugin;
+namespace CustomCoreBlockSetting;
 
-class AI_Modal_Plugin {
+class Custom_Core_Block_Setting {
     /**
      * The instance of the class.
      *
-     * @var AI_Modal_Plugin
+     * @var Custom_Core_Block_Setting
      */
     private static $instance = null;
 
     /**
      * Returns the instance of the class.
      *
-     * @return AI_Modal_Plugin
+     * @return Custom_Core_Block_Setting
      */
     public static function instance() {
         if ( is_null( self::$instance ) ) {
@@ -23,7 +23,7 @@ class AI_Modal_Plugin {
     }
 
     /**
-     * AI_Modal_Plugin constructor.
+     * Custom_Core_Block_Setting constructor.
      */
     public function __construct() {
         add_action( 'enqueue_block_editor_assets', [ $this, 'enqueue_scripts' ] );
@@ -41,7 +41,7 @@ class AI_Modal_Plugin {
             $admin_version         = ( ! empty( $admin_asset_file['version'] ) ) ? $admin_asset_file['version'] : '1.0.0';
 
             wp_enqueue_script(
-                'ai-modal-plugin',
+                'custom-core-block-setting',
                 plugin_dir_url( __FILE__ ) . 'build/index.js',
                 $admin_js_dependencies,
                 $admin_version,
@@ -50,4 +50,4 @@ class AI_Modal_Plugin {
         }
     }
 }   
-AI_Modal_Plugin::instance();
+Custom_Core_Block_Setting::instance();

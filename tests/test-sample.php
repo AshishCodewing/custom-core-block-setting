@@ -2,7 +2,7 @@
 /**
  * Class SampleTest
  *
- * @package Ai_Modal_Plugin
+ * @package Custom_Core_Block_Setting
  */
 
 /**
