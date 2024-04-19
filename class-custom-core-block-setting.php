@@ -47,6 +47,13 @@ class Custom_Core_Block_Setting {
                 $admin_version,
                 true
             );
+
+            wp_enqueue_style(
+                'custom-core-block-setting',
+                plugin_dir_url(__FILE__) . 'build/index.css',
+                array(),
+                filemtime( plugin_dir_path(__FILE__) . 'build/index.css' )
+            );
         }
     }
 }   

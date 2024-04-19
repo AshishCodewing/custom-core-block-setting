@@ -1,0 +1,75 @@
+.chat-modal {
+    &.is-full-screen {
+        max-width: 1400px !important;
+    }
+
+    .components-modal__header+div {
+        height: 100%;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__answer {
+        overflow: hidden;
+        flex: 1 1 0%;
+    }
+
+    &__height-full {
+        position: relative;
+        height: 100%;
+    }
+
+    &__scroll {
+        height: 100%;
+        overflow-y: auto;
+        width: 100%;
+    }
+
+    &__form {
+        width: min(90%, 42rem);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        border-radius: $border-radius;
+        border: $border;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__textarea {
+        width: 100%;
+
+        .components-base-control__field {
+            margin-block-end: 0 !important;
+        }
+
+        .components-textarea-control__input {
+            border: none;
+            outline: 0;
+            resize: none;
+            box-shadow: none !important;
+            max-height: 25dvh;
+            padding: 15px 60px 15px 24px;
+            transform: height 0.2s ease-in-out;
+
+            scrollbar-color: #dadce0 transparent;
+            scrollbar-gutter: auto;
+            scrollbar-width: thin;
+        }
+    }
+
+    &__submit {
+        position: absolute;
+        right: 15px;
+        height: auto;
+        background-color: $border-clr;
+        border-radius: $border-radius;
+        aspect-ratio: 1;
+        cursor: pointer;
+        transition: top 0.2s ease-in-out, bottom 0.2s ease-in-out;
+    }
+}

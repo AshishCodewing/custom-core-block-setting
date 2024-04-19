@@ -2,7 +2,7 @@ import { registerPlugin } from '@wordpress/plugins';
 import { PluginBlockSettingsMenuItem } from '@wordpress/edit-post';
 import { __ } from '@wordpress/i18n';
 import { useState } from '@wordpress/element';
-import AIModal from './AIModal';
+import { ChatModal } from './components';
 
 function ParagraphBlockToolbarMenuItem() {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,7 @@ function ParagraphBlockToolbarMenuItem() {
             />
             {
                 isOpen && (
-                    <AIModal onClose={closeModal} />
+                    <ChatModal onClose={closeModal} />
                 )
             }
         </>

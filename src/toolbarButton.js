@@ -17,7 +17,7 @@ const {
 import { useState } from '@wordpress/element'
 
 import classnames from 'classnames'
-import AIModal from './AIModal';
+import { ChatModal } from './components';
 
 
 /**
@@ -89,7 +89,7 @@ const withToolbarButton = createHigherOrderComponent((BlockEdit) => {
                 <BlockEdit {...props} />
                 {
                     isOpen && (
-                        <AIModal onClose={closeModal} />
+                        <ChatModal onClose={closeModal} />
                     )
                 }
             </Fragment>
