@@ -3,6 +3,7 @@ import { PluginBlockSettingsMenuItem } from '@wordpress/edit-post';
 import { __ } from '@wordpress/i18n';
 import { useState } from '@wordpress/element';
 import { ChatModal } from './components';
+import { SelectMenu } from './components';
 
 function ParagraphBlockToolbarMenuItem() {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,7 @@ function ParagraphBlockToolbarMenuItem() {
                 label={__('Chat with AI')}
                 onClick={openModal}
             />
+            <SelectMenu />
             {
                 isOpen && (
                     <ChatModal onClose={closeModal} />

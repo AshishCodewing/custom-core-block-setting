@@ -54,7 +54,6 @@
             box-shadow: none !important;
             max-height: 25dvh;
             padding: 15px 60px 15px 24px;
-            transform: height 0.2s ease-in-out;
             font-size: 16px;
 
             scrollbar-color: #dadce0 transparent;
@@ -71,6 +70,6 @@
         border-radius: $border-radius;
         aspect-ratio: 1;
         cursor: pointer;
-        transition: top 0.2s ease-in-out, bottom 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
     }
 }
